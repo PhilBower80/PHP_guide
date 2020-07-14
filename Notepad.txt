@@ -1,0 +1,20 @@
+namespaces
+autoloading
+composer and league of extraordinary packages
+creating components
+
+
+Coding standards
+PSR-1
+long php tags vs short tags
+PSR-2 (spaces not tabs - 4 space indents)
+Code sniffer
+Composer metadata
+semantic versioning
+errors
+exceptions
+
+
+I have continued to watch the videos about PHP standards and best practices and I have learnt about namespaces, autoloading, composer and league of extraordinary packages and creating components.
+
+

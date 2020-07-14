@@ -1,0 +1,184 @@
+// BASE STYLES
+
+// * {
+// 	border: 1px solid red;
+// }
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Fira Code', monospace;
+	background-color: $black;
+	color: $phpBlue;
+	display: flex;
+	flex-direction: column;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a:link,
+a:visited {
+	color: $phpBlue;
+	text-decoration: none;
+}
+
+a:link:active,
+a:visited:active {
+	color: $phpBlue;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+// end of BASE STYLES
+header {
+	height: 100px;
+}
+
+.header-container {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.home-page-logo {
+	width: 100px;
+}
+
+.fa-php {
+	color: $phpBlue;
+	font-size: 6em;
+}
+
+.burger {
+	cursor: pointer;
+	position: relative;
+	z-index: 100;
+
+	span {
+		background: $phpBlue;
+		display: block;
+		width: 30px;
+		height: 3px;
+		margin-bottom: 5px;
+		position: relative;
+		top: 0;
+		transition: all ease-out 0.4s;
+		user-select: none;
+	}
+}
+
+.burger-container.active span {
+	&:nth-child(1) {
+		transform: rotate(225deg);
+		top: 8px; // this equals span height + span margin
+		background: $black;
+	}
+	&:nth-child(2) {
+		opacity: 0;
+	}
+
+	&:nth-child(3) {
+		transform: rotate(315deg);
+		top: -8px; // this equals span height + span margin
+		background: $black;
+	}
+}
+
+.hero {
+	// background: $phpBlue;
+	background-color: $black;
+	width: 100%;
+
+	.flex-container {
+		height: calc(100vh - 160px);
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+	}
+}
+
+footer {
+	// height: 60px;
+	flex-shrink: 0;
+	.flex-container {
+		justify-content: center;
+		align-items: center;
+		flex-shrink: 0;
+	}
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+// NAVIGATION
+
+.mobile-nav {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	background: $phpBlue;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	visibility: hidden;
+	transition: all 0.5s ease-in-out;
+	opacity: 0;
+	li {
+		margin: 20px 0 20px;
+	}
+	a {
+		color: black;
+		font-size: 1.875rem;
+		font-weight: 700;
+		transition: all ease-in-out 0.4s;
+	}
+	a:hover {
+		color: $white;
+		font-size: 2.5rem;
+	}
+}
+
+.mobile-nav.active {
+	visibility: visible;
+	opacity: 0.95;
+}
+
+// end of NAVIGATION
+
+// arrays page
+
+.arrays {
+	flex-flow: column wrap;
+}
+// end of arrays page

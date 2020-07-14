@@ -1,0 +1,221 @@
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in HSLA */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fira Code', monospace;
+  background-color: #262621;
+  color: #6082bb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a:link,
+a:visited {
+  color: #6082bb;
+  text-decoration: none;
+}
+
+a:link:active,
+a:visited:active {
+  color: #6082bb;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  height: 100px;
+}
+
+.header-container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-page-logo {
+  width: 100px;
+}
+
+.fa-php {
+  color: #6082bb;
+  font-size: 6em;
+}
+
+.burger {
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+
+.burger span {
+  background: #6082bb;
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin-bottom: 5px;
+  position: relative;
+  top: 0;
+  -webkit-transition: all ease-out 0.4s;
+  transition: all ease-out 0.4s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.burger-container.active span:nth-child(1) {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  top: 8px;
+  background: #262621;
+}
+
+.burger-container.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-container.active span:nth-child(3) {
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+  top: -8px;
+  background: #262621;
+}
+
+.hero {
+  background-color: #262621;
+  width: 100%;
+}
+
+.hero .flex-container {
+  height: calc(100vh - 160px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+footer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+footer .flex-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.mobile-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #6082bb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.mobile-nav li {
+  margin: 20px 0 20px;
+}
+
+.mobile-nav a {
+  color: black;
+  font-size: 1.875rem;
+  font-weight: 700;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+.mobile-nav a:hover {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.mobile-nav.active {
+  visibility: visible;
+  opacity: 0.95;
+}
+
+.arrays {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+/*# sourceMappingURL=styles.css.map */
